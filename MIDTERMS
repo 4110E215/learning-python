@@ -1,0 +1,92 @@
+EX.1
+
+1.
+RECURSIVE FUNCTION:
+def f(n):
+    print("f has been called with n = " + str(n))
+    if n == 1:
+        return 1
+    else:
+        res = n * f(n-1)
+        print("intermediate result for ",n, " * factorial(" ,n-1, "): ", res)
+        return res
+        print(factorial(10))
+        
+        
+2.
+INTERATIVE FUNCTION
+ def f(n):
+    result = 1
+    for i in range(2,n+1):
+        result *= i
+    return result
+    
+for i in range(10):
+    print(i, f(i))
+    
+    
+    
+  
+EX.2    
+    
+    1.
+RECURSIVE FUNCTION:
+def f(n):
+    print("f has been called with n = " + str(n))
+    if n == 1:
+        return 1
+    else:
+        res = n * f(n-1)
+        print("intermediate result for ",n, " * factorial(" ,n-1, "): ", res)
+        return res
+        print(factorial(10))
+        
+        
+2.
+INTERATIVE FUNCTION
+ def f(n):
+    result = 1
+    for i in range(2,n+1):
+        result *= i
+    return result
+    
+for i in range(10):
+    print(i, f(i))
+    
+    
+    
+    
+    
+EX.3
+def gcd(a, b):
+    if (a == 0):
+        return b
+    if (b == 0):
+        return a
+    if (a == b):
+        return a
+    if (a > b):
+        return gcd(a-b, b)
+    return gcd(a, b-a)
+a = 48
+b = 18
+if(gcd(a, b)):
+    print('GCD of', a, 'and', b, 'is', gcd(a, b))
+else:
+    print('not found')
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 
